@@ -19,9 +19,11 @@
 - σ = population standard deviation
 
 ## Example Google Cloud SDK command:
-```gcloud logging read 'httpRequest.userAgent:"menu/" AND (
+```
+gcloud logging read 'httpRequest.userAgent:"menu/" AND (
       (timestamp >= \"2021-02-01T11:00:00+09\"
          AND timestamp < \"2021-02-01T14:00:00+09\") OR
       (timestamp >= \"2021-02-01T17:00:00+09\"
           AND timestamp < \"2021-02-01T22:00:00+09\")
-      --format="csv(httpRequest.latency,timestamp,httpRequest.requestUrl)")'```
+      --format="csv(httpRequest.latency,timestamp,httpRequest.requestUrl)")'
+```
