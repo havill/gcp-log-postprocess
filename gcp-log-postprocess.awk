@@ -50,8 +50,8 @@ function usage() {
     print "      (timestamp >= \\\"2021-02-01T11:00:00+09\\\"" > "/dev/stderr"
     print "         AND timestamp < \\\"2021-02-01T14:00:00+09\\\") OR" > "/dev/stderr"
     print "      (timestamp >= \\\"2021-02-01T17:00:00+09\\\"" > "/dev/stderr"
-    print "          AND timestamp < \\\"2021-02-01T22:00:00+09\\\"))'" > "/dev/stderr"
-    print "      --format=\"csv(httpRequest.latency,timestamp,httpRequest.requestUrl)\"" > "/dev/stderr"
+    print "          AND timestamp < \\\"2021-02-01T22:00:00+09\\\")" > "/dev/stderr"
+    print "   )' --format=\"csv(httpRequest.latency,timestamp,httpRequest.requestUrl)\"" > "/dev/stderr"
 }
 
 function getopt() {
